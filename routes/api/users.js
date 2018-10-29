@@ -10,6 +10,13 @@ const keys = require('../../config/keys');
 const passport = require('passport');
 
 
+// Load Input validations
+const validateRegisterInput = require ('../../validations/register');
+const validateLoginInput = require('../../validations/login');
+
+
+
+
 // Load User Model
 const User = require('../../models/User');
 
@@ -26,6 +33,14 @@ router.get('/test',(req,res)=>{
 
 router.post('/register',(req,res)=>{
 
+
+    const {errors , isValid} = validateRegisterInput(req.body);
+
+    // Check  Validations
+
+    if(!isValid){
+        return res.status(400).json(errors);
+    }
 
     User.findOne({ email : req.body.email })
         .then(user => {
@@ -68,6 +83,18 @@ router.post('/register',(req,res)=>{
 //DESC Login User /returning JWT Token
 
 router.post('/login',(req,res)=>{
+
+    const {errors , isValid} = validateLoginInput(req.body);
+
+    // Check  Validations
+
+    if(!isValid){
+        return res.status(400).json(errors);
+    }
+
+
+
+
     const email = req.body.email;
     const password = req.body.password;
 
@@ -94,7 +121,8 @@ router.post('/login',(req,res)=>{
                             id: user.id,
                             name: user.name,
                             avatar: user.avatar
-                        }
+                        };
+
                         // sign token
                         jwt.sign(
                             payload,
@@ -128,11 +156,13 @@ router.post('/login',(req,res)=>{
 //access private
 
 
-router.get('/current',passport.authenticate('jwt', { session : false},()=>{
-
-},(req,res)=>{
-    res.json({msg:'succcess'});
-})
+router.get('/current',passport.authenticate('jwt', { session : false}),(req,res)=>{
+        res.json({
+            id:req.user.id,
+            name:req.user.name,
+            email: req.user.email
+        });
+    }
 );
 
 

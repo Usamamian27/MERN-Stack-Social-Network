@@ -5,8 +5,8 @@ const profile = require('./routes/api/profile');
 const posts = require('./routes/api/posts');
 const bodyParser =require('body-parser');
 const passport = require('passport');
-
 const app = express();
+
 
 
 // Body parser middleWare
@@ -24,7 +24,7 @@ const db = require('./config/keys').mongoURI;
 
 mongoose.connect(db)
     .then(()=>{
-        console.log('Connection Succesful');
+        console.log('Connection to MongoDB :  Succesful');
     })
     .catch(err => console.log(err));
 
@@ -51,4 +51,4 @@ const port = process.env.port || 5000;
 
 app.listen(port, ()=>{
     console.log(`Server running on port ${port}`);
-})
+});
