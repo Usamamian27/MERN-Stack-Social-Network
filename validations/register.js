@@ -32,13 +32,11 @@ module.exports = function validateRegisterInput(data){
         errors.email = 'Email  is Invalid';
     }
 
+
     if(Validator.isEmpty(data.password2)){
         errors.password2 = 'Confirm Password Field is Required';
     }
 
-    if(Validator.isEmpty(data.password)){
-        errors.password = 'Password Field is Required';
-    }
 
     if(!Validator.equals(data.password , data.password2)){
         errors.password2 = 'Passwords must match';
@@ -48,6 +46,11 @@ module.exports = function validateRegisterInput(data){
         errors.password= 'Password must be valid atleast 6 characters';
 
     }
+
+    if(Validator.isEmpty(data.password)){
+        errors.password = 'Password Field is Required';
+    }
+
 
 
     return{
