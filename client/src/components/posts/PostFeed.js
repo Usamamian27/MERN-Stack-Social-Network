@@ -1,6 +1,11 @@
 import React, {Component} from 'react';
 import PostItem from './PostItem';
 
+
+
+// This file is just extracting the posts from post array
+// and sending it to postItem to display
+
 class PostFeed extends Component {
 
 

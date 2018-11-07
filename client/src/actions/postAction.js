@@ -12,7 +12,7 @@ import {
 
 // Add Post
 export const addpost = (postData) => dispatch => {
-
+    dispatch(clearErrors());
     axios
         .post('/api/posts', postData)
         .then(res =>
@@ -29,7 +29,7 @@ export const addpost = (postData) => dispatch => {
         );
 };
 
-// Get Posts
+// Get Posts (ALL)
 export const getposts = () => dispatch => {
     dispatch(setPostLoading());
     axios
@@ -43,6 +43,26 @@ export const getposts = () => dispatch => {
         .catch(err =>
             dispatch({
                 type: GET_POSTS,
+                payload: null
+            })
+        );
+};
+
+
+// Get Single Post
+export const getpost = (id) => dispatch => {
+    dispatch(setPostLoading());
+    axios
+        .get(`/api/posts/${id}`)
+        .then(res =>
+            dispatch({
+                type: GET_POST,
+                payload: res.data
+            })
+        )
+        .catch(err =>
+            dispatch({
+                type: GET_POST,
                 payload: null
             })
         );
@@ -101,6 +121,46 @@ export const removeLike = (id) => dispatch => {
         );
 };
 
+//Add Comments
+export const addComment = (postId,commentData) => dispatch => {
+    dispatch(clearErrors());
+    axios
+        .post(`/api/posts/comment/${postId}`, commentData)
+        .then(res =>
+            dispatch({
+                type: GET_POST,
+                payload: res.data
+            })
+        )
+        .catch(err =>
+            dispatch({
+                type: GET_ERRORS,
+                payload: err.response.data
+            })
+        );
+};
+
+
+// Delete Comments
+export const deleteComment = (postId,commentId) => dispatch => {
+
+    axios
+        .delete(`/api/posts/comment/${postId}/${commentId}`)
+        .then(res =>
+            dispatch({
+                type: GET_POST,
+                payload: res.data
+            })
+        )
+        .catch(err =>
+            dispatch({
+                type: GET_ERRORS,
+                payload: err.response.data
+            })
+        );
+};
+
+
 
 
 // Set Loading state
@@ -108,6 +168,15 @@ export const setPostLoading = () =>{
 
     return {
         type: POST_LOADING
+
+    }
+};
+
+// Clear Errors
+export const clearErrors  = () =>{
+
+    return {
+        type: CLEAR_ERRORS
 
     }
 };

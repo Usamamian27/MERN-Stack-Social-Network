@@ -170,7 +170,7 @@ router.post('/unlike/:id',passposrt.authenticate('jwt',{session:false}),
 // desc Add comment to  post
 //access private
 
-router.post('/comment/:id/:comment_id',passposrt.authenticate('jwt',{session:false}),
+router.post('/comment/:id',passposrt.authenticate('jwt',{session:false}),
     (req,res)=>{
 
         const { errors , isValid} = validatePostInput(req.body);

@@ -25,6 +25,7 @@ import {logOutUser, setCurrentUser} from "./actions/authActions";
 import {clearCurrentProfile} from "./actions/profileAction";
 import NotFound from './components/not-found/NotFound';
 import Posts from "./components/posts/Posts";
+import Post from "./components/SinglePost/SinglePost";
 
 
 // to save the token info in redux
@@ -100,6 +101,10 @@ class App extends Component {
 
                           <Switch>
                               <PrivateRoute exact path="/feed" component={Posts} />
+                          </Switch>
+
+                          <Switch>
+                              <PrivateRoute exact path="/post/:id" component={Post} />
                           </Switch>
 
 

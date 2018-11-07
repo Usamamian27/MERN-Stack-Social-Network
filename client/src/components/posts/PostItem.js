@@ -5,6 +5,10 @@ import { Link } from 'react-router-dom';
 import {deletePost ,addLike,removeLike} from "../../actions/postAction";
 
 
+
+// This File is just dispalying a single Post item
+
+
 class PostItem extends Component {
 
     onDeleteClick(id) {
@@ -32,7 +36,7 @@ class PostItem extends Component {
 
     render() {
 
-        const {auth, post} = this.props;
+        const {auth, post , showActions} = this.props;
 
         return (
             <div className="card card-body mb-3">
@@ -47,47 +51,43 @@ class PostItem extends Component {
                     <div className="col-md-10">
                         <p className="lead">{post.text}</p>
 
-                        {/* this is like button */}
-                        <button onClick={this.onLikeClick.bind(this,post._id)} type="button" className="btn btn-light mr-1">
+                        {/* These buttons only show if show action is true */}
+                        {showActions ?
+                            (
+                                <span>
+                                    {/* this is like button */}
+                                    <button onClick={this.onLikeClick.bind(this,post._id)} type="button" className="btn btn-light mr-1">
+                                        <i
+                                            className={classnames('fas fa-thumbs-up', {
+                                                'text-primary': this.findUserLike(post.likes)
+                                            })}
+                                        />
+                                        <span className="badge badge-light">{post.likes.length}</span>
+                                    </button>
 
+                                    {/* this is unlike button */}
+                                    <button onClick={this.onUnlikeClick.bind(this,post._id)} type="button" className="btn btn-light mr-1">
+                                        <i className="text-secondary fas fa-thumbs-down"></i>
+                                    </button>
 
-                            <i
-                                className={classnames('fas fa-thumbs-up', {
-                                    'text-primary': this.findUserLike(post.likes)
-                                })}
-                            />
+                                    <Link to={`/post/${post._id}`} className="btn btn-info mr-1">
+                                        Comments
+                                    </Link>
 
-
-
-                            <span className="badge badge-light">{post.likes.length}</span>
-                        </button>
-
-
-
-                        {/* this is unlike button */}
-                        <button onClick={this.onUnlikeClick.bind(this,post._id)} type="button" className="btn btn-light mr-1">
-                            <i className="text-secondary fas fa-thumbs-down"></i>
-                        </button>
-
-
-                        <Link to={`/post/${post._id}`} className="btn btn-info mr-1">
-                            Comments
-                        </Link>
-
-                        {/*/ if it is logged in user's post show delete button
-                        // otherwise not
-                        */}
-
-
-                        {post.user === auth.user.id ? (
-                            <button
-                                onClick={this.onDeleteClick.bind(this, post._id)}
-                                type="button"
-                                className="btn btn-danger mr-1"
-                            >
-                                <i className="fas fa-times" />
-                            </button>
-                        ) : null}
+                                    {/*/ if it is logged in user's post show delete button
+                                    // otherwise not
+                                    */}
+                                    {post.user === auth.user.id ? (
+                                                    <button
+                                                        onClick={this.onDeleteClick.bind(this, post._id)}
+                                                        type="button"
+                                                        className="btn btn-danger mr-1"
+                                                    >
+                                                        <i className="fas fa-times" />
+                                                    </button>
+                                                ) : null}
+                                </span>
+                            ) : null}
 
                     </div>
                 </div>
@@ -95,6 +95,11 @@ class PostItem extends Component {
         );
     }
 }
+
+PostItem.defaultProps ={
+    showActions : true
+};
+
 const mapStateToProps=(state)=>({
     auth :state.auth
 });
