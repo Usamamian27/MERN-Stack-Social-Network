@@ -6,7 +6,8 @@
   "scripts": {
     "client-install": "npm install --prefix client",
     "start": "node server.js",
-    "server": "nodemon server.js"
+    "server": "nodemon server.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "author": "Usama",
   "license": "ISC",

@@ -3,68 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="38ba18ae-cd8d-4041-ba3e-e2ff297750a0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/actions/authActions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/actions/postAction.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/actions/profileAction.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/actions/types.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/SinglePost/CommentFeed.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/SinglePost/CommentItem.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/SinglePost/SinglePost.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/SinglePost/commentForm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/add-edu-exper/AddEducation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/add-edu-exper/AddExperience.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/auth/Login.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/auth/Register.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/common/InputGroup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/common/Loadder.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/common/PrivateRoute.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/common/SelectListGroup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/common/Spinner.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/common/TextAreaFieldGroup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/common/TextFieldGroup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/create-profile/CreateProfile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/Education.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/Experience.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/ProfileActions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/edit-profile/EditProfile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/Footer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/Landing.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layout/Navbar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/not-found/NotFound.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/posts/PostFeed.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/posts/PostForm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/posts/PostItem.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/posts/Posts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profiles/ProfileItem.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profiles/Profiles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/singleProfile/ProfileAbout.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/singleProfile/ProfileCreds.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/singleProfile/ProfileGithub.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/singleProfile/ProfileHeader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/singleProfile/SingleProfile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/img/showcase.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/reducers/authReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/reducers/errorReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/reducers/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/reducers/postReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/reducers/profileReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/serviceWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/store.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/utils/setAuthToken.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/validations/is-empty.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
@@ -103,14 +41,14 @@
           <entry key="gitignore" value="2" />
           <entry key="html" value="2" />
           <entry key="js" value="179" />
-          <entry key="json" value="16" />
+          <entry key="json" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="3" />
           <entry key="HTML" value="2" />
-          <entry key="JSON" value="16" />
+          <entry key="JSON" value="19" />
           <entry key="JavaScript" value="179" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
@@ -120,13 +58,13 @@
           <entry key="gitignore" value="20" />
           <entry key="html" value="37" />
           <entry key="js" value="33766" />
-          <entry key="json" value="394" />
+          <entry key="json" value="396" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="37" />
-          <entry key="JSON" value="394" />
+          <entry key="JSON" value="396" />
           <entry key="JavaScript" value="33766" />
           <entry key="PLAIN_TEXT" value="20" />
         </counts>
@@ -135,20 +73,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package.json">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+            <state relative-caret-position="368">
+              <caret line="49" column="65" selection-start-line="49" selection-start-column="65" selection-end-line="49" selection-end-column="65" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="207">
+              <caret line="9" column="67" selection-start-line="9" selection-start-column="67" selection-end-line="9" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -227,16 +165,16 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/client/node_modules" />
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
+      <path value="$PROJECT_DIR$/client/package.json" />
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+  <component name="ProjectFrameBounds">
     <option name="width" value="960" />
     <option name="height" value="1040" />
   </component>
@@ -254,6 +192,11 @@
             <path>
               <item name="Social_network" type="b2602c69:ProjectViewProjectNode" />
               <item name="Social_network" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Social_network" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Social_network" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -319,12 +262,12 @@
       <workItem from="1541492668099" duration="26929000" />
       <workItem from="1541584096935" duration="14191000" />
       <workItem from="1541676172398" duration="6623000" />
-      <workItem from="1541684016997" duration="2115000" />
+      <workItem from="1541684016997" duration="3061000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156120000" />
+    <option name="totallyTimeSpent" value="157066000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -336,10 +279,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="0" y="0" width="960" height="1040" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12486828" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2570499" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -351,7 +294,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3288889" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.22444445" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.22850679" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -703,15 +646,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="368">
+          <caret line="49" column="65" selection-start-line="49" selection-start-column="65" selection-end-line="49" selection-end-column="65" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+        <state relative-caret-position="207">
+          <caret line="9" column="67" selection-start-line="9" selection-start-column="67" selection-end-line="9" selection-end-column="67" />
         </state>
       </provider>
     </entry>
