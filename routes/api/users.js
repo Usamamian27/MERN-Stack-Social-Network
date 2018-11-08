@@ -127,7 +127,7 @@ router.post('/login',(req,res)=>{
                         jwt.sign(
                             payload,
                             keys.Secret,
-                            {expiresIn: 3600},
+                            {expiresIn: 8.64e+7},
                             (err,token)=>{
                                 res.json({
                                 success : true,
