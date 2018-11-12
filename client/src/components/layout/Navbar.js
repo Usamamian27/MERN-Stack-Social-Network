@@ -43,7 +43,9 @@ class Navbar extends Component {
                              title="you must have a gravatar connected to your email"
                         />
                         {' '}
+                        <Link to="/login">
                         Logout
+                        </Link>
                     </a>
                 </li>
             </ul>
