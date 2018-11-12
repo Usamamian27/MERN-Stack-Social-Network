@@ -57,4 +57,7 @@ if (process.env.NODE_ENV === 'production') {
 // port settings
 // const port = process.env.port || 5000;
 
-app.listen(process.env.port || 5000 , '0.0.0.0');
+app.listen(process.env.PORT || 5000, function (err) {
+    if (err) throw err
+
+});
